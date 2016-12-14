@@ -41,10 +41,10 @@
   <!-- <project name="meta-fsl-bsp-release" path="meta-fsl-bsp-release" remote="fsl-release" revision="jethro_4.1.15-1.0.0_ga" /> To be enabled for sabre. Off due to clone time -->
 
   <!-- board support package -->
-  <project remote="boundary" name="meta-boundary" path="meta-boundary" revision="krogoth" />
+  <project name="boundarydevices/meta-boundary" path="github" remote="github" revision="krogoth" />
 
   <!-- valid mfg distro, patches and recipes -->
-  <project remote="validmfg" name="meta-valid-ivi" path="meta-valid-ivi" revision="krogoth" />
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="krogoth" />
 
   <!-- iotivity -->
   <project name="meta-oic" path="meta-oic" remote="yocto" revision="1.1.1" />
