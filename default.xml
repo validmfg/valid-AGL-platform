@@ -12,13 +12,10 @@
   <remote name="openembedded"
           fetch="git://git.openembedded.org/" />
 
-  <!-- meta-rust --> <!-- freescale bsp --> <!-- meta-amb -->
   <!-- meta-qt5  -->
   <remote name="github" fetch="https://github.com/" />
 
-  <!-- 01.org (Intel) -->
-  <remote name="01org" fetch="https://github.com/01org/" />
-
+  <!-- freescale -->
   <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
 
   <default revision="master"
@@ -36,24 +33,18 @@
   <project name="meta-openembedded" path="meta-openembedded" remote="openembedded" revision="krogoth" />
 
   <!-- Qt things --> <!-- meta-qt5 has qt5.7 in branch morty -->
-  <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="morty" />
-
-  <!-- Porter specific things. -->
-  <project name="AGL/meta-renesas" path="meta-renesas" />
-
-  <!-- Renesas Gen3 specific things -->
-  <project name="CogentEmbedded/meta-rcar" path="meta-rcar" remote="github" revision="v2.12.0" />
-
-  <!-- MinnowBoard MAX specific things -->
-  <project name="meta-intel" path="meta-intel" remote="yocto" revision="krogoth" />
+  <project name="meta-qt5/meta-qt5" path="meta-qt5"  revision="morty" />
 
   <!-- i.MX6 / e.g. wandboard specific things -->
   <project name="meta-fsl-arm" path="meta-fsl-arm" remote="yocto" revision="krogoth" />
   <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="krogoth" />
   <!-- <project name="meta-fsl-bsp-release" path="meta-fsl-bsp-release" remote="fsl-release" revision="jethro_4.1.15-1.0.0_ga" /> To be enabled for sabre. Off due to clone time -->
 
-  <!-- ti vayu / jacinto 6 / DRA7 -->
-  <project name="meta-ti" path="meta-ti" remote="yocto" revision="krogoth" />
+  <!-- board support package -->
+  <project remote="boundary" name="meta-boundary" path="sources/meta-boundary" revision="krogoth" />
+
+  <!-- valid mfg distro, patches and recipes -->
+  <project remote="validmfg" name="meta-valid-display-systems" path="sources/meta-valid-display-systems" revision="krogoth-next" />
 
   <!-- iotivity -->
   <project name="meta-oic" path="meta-oic" remote="yocto" revision="1.1.1" />
@@ -63,12 +54,6 @@
 
   <!-- meta-rust -->
   <project name="meta-rust/meta-rust" path="meta-rust" remote="github" revision="d0663639a08ed60bb83fd6eb99e3e2045b21b53c" />
-
-  <!-- rpi 2 and 3 -->
-  <project name="meta-raspberrypi" path="meta-raspberrypi" remote="yocto" revision="krogoth" />
-
-  <!-- DragonBoard 410c specific things -->
-  <project name="meta-qcom" path="meta-qcom" remote="yocto" revision="krogoth" />
 
   <!-- Image Security Analysis FrameWork (isafw) -->
   <project name="meta-security-isafw" path="meta-security-isafw" remote="01org" revision="master" />
