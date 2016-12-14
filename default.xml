@@ -12,7 +12,7 @@
   <remote name="openembedded"
           fetch="git://git.openembedded.org/" />
 
-  <!-- meta-qt5  -->
+  <!-- github (rust, freescale, amb, qt5, boundary, validmfg, 01org  -->
   <remote name="github" fetch="https://github.com/" />
 
   <!-- freescale -->
@@ -33,7 +33,7 @@
   <project name="meta-openembedded" path="meta-openembedded" remote="openembedded" revision="krogoth" />
 
   <!-- Qt things --> <!-- meta-qt5 has qt5.7 in branch morty -->
-  <project name="meta-qt5/meta-qt5" path="meta-qt5"  revision="morty" />
+  <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="morty" />
 
   <!-- i.MX6 / e.g. wandboard specific things -->
   <project name="meta-fsl-arm" path="meta-fsl-arm" remote="yocto" revision="krogoth" />
