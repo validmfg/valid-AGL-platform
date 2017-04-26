@@ -43,15 +43,6 @@
   <!-- QT uses vendor branch 5.8 -->
   <!--<project name="yocto/meta-qt5" path="meta-qt5" remote="qt.io" revision="5.8" />-->
 
-  <!-- Porter specific things. -->
-  <project name="AGL/meta-renesas" path="meta-renesas" />
-
-  <!-- Renesas Gen3 specific things -->
-  <project name="AGL/meta-renesas-rcar-gen3" path="meta-renesas-rcar-gen3" revision="master" />
-
-  <!-- MinnowBoard MAX specific things -->
-  <project name="meta-intel" path="meta-intel" remote="yocto" revision="morty" />
-
   <!-- i.MX6 / e.g. wandboard specific things -->
   <project name="meta-fsl-arm" path="meta-fsl-arm" remote="yocto" revision="krogoth" />  <!-- no morty branch, krogoth branch active -->
   <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="morty" />
@@ -60,24 +51,11 @@
   <!-- Boundary devices bsp layer -->
   <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="morty" />
 
-  <!-- ti vayu / jacinto 6 / DRA7 -->
-  <project name="meta-ti" path="meta-ti" remote="yocto" revision="master" />
-
   <!-- iotivity -->
   <project name="meta-oic" path="meta-oic" remote="yocto" revision="1.2.0" />
 
   <!-- meta-rust -->
   <project name="meta-rust/meta-rust" path="meta-rust" remote="github" revision="a506df4ba4b186e311117d5bdc6a54844583a4fd" />
-
-  <!-- rpi 2 and 3 -->
-  <project name="meta-raspberrypi" path="meta-raspberrypi" remote="yocto" revision="69c56754bdd6417de5b69d3c8c3684ecff8e4651" />
-
-  <!-- DragonBoard 410c specific things -->
-  <project name="meta-qcom" path="meta-qcom" remote="yocto" revision="morty" />
-
-  <!-- Altera SOCFPGA platform --> <!-- pinned to version from master until branch for morty exists -->
-  <!-- https://github.com/kraj/meta-altera -->
-  <project name="kraj/meta-altera" path="meta-altera" remote="github" revision="4364dbfcb600da82ecdfc4797f112d187e40f1c3" />
 
   <!-- Image Security Analysis FrameWork (isafw) -->
   <!-- use morty branch for CC and DD - conflicting changes in master-->
@@ -86,5 +64,8 @@
   <!-- IoT Security layer -->
   <!-- fixed version since 3936bc3 removed cynara -->
   <project name="01org/meta-intel-iot-security" path="meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285" />
+
+  <!-- validmfg layer -->
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="morty" />
 
 </manifest>
