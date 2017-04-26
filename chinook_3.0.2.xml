@@ -14,6 +14,7 @@
   <project name="AGL/meta-agl-extra" path="meta-agl-extra" revision="27fc9de4aa4d0684a0441cb55a9dafce760f2f68" upstream="refs/tags/3.0.2"/>
   <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="e95f4ae61fdaf6452d6dfa9cb59dbdf9cdf73c99" upstream="krogoth"/>
   <project name="meta-fsl-arm" remote="yocto" revision="e2254e7b2ded0c2b66b1226f879b3a6d52037b2d" upstream="krogoth"/>
+<project name="boundarydevices/meta-boundary" path="github" remote="github" revision="b526a39452ea69626cddae230718401616c99412" upstream="krogoth" />
   <project name="01org/meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
   <project name="meta-oic" remote="yocto" revision="0bdd959e0dee4f63098702c302d1d214ac3d808a"/>
   <project name="meta-openembedded" remote="openembedded" revision="55c8a76da5dc099a7bc3838495c672140cedb78e" upstream="krogoth"/>

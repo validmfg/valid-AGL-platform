@@ -38,6 +38,9 @@
   <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="krogoth" />
   <!-- <project name="meta-fsl-bsp-release" path="meta-fsl-bsp-release" remote="fsl-release" revision="jethro_4.1.15-1.0.0_ga" /> To be enabled for sabre. Off due to clone time -->
 
+  <!-- Boundary devices bsp layer -->
+  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="morty" />
+
   <!-- iotivity -->
   <project name="meta-oic" path="meta-oic" remote="yocto" revision="0bdd959e0dee4f63098702c302d1d214ac3d808a" />
 
