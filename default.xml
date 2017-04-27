@@ -44,8 +44,8 @@
   <!--<project name="yocto/meta-qt5" path="meta-qt5" remote="qt.io" revision="5.8" />-->
 
   <!-- i.MX6 / e.g. wandboard specific things -->
-  <project name="meta-fsl-arm" path="meta-fsl-arm" remote="yocto" revision="krogoth" />  <!-- no morty branch, krogoth branch active -->
-  <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="morty" />
+  <project name="Freescale/meta-freescale" path="meta-freescale-layer" remote="github" revision="morty"/>  
+  <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="morty" />  
   <!-- <project name="meta-fsl-bsp-release" path="meta-fsl-bsp-release" remote="fsl-release" revision="jethro_4.1.15-1.0.0_ga" /> To be enabled for sabre. Off due to clone time -->
 
   <!-- Boundary devices bsp layer -->
