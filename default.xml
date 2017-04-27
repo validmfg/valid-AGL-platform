@@ -21,12 +21,13 @@
   <!-- fsl/nxp --> <!-- likely broken -->
   <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
 
-  <default revision="master"
+  <default revision="chinook"
            remote="agl"
            sync-j="4" />
 
   <!-- AGL things. -->
-  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="AGL/meta-agl" path="meta-agl"/>
+  <project name="AGL/meta-agl-extra" path="meta-agl-extra" />
   <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
   <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
 
@@ -52,7 +53,10 @@
   <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="morty" />
 
   <!-- iotivity -->
-  <project name="meta-oic" path="meta-oic" remote="yocto" revision="1.2.0" />
+  <project name="meta-oic" path="meta-oic" remote="yocto" revision="0bdd959e0dee4f63098702c302d1d214ac3d808a" />
+
+  <!-- meta-amb -->
+  <project name="tripzero/meta-amb" path="meta-amb" remote="github" revision="master" />
 
   <!-- meta-rust -->
   <project name="meta-rust/meta-rust" path="meta-rust" remote="github" revision="a506df4ba4b186e311117d5bdc6a54844583a4fd" />
