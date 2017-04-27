@@ -15,12 +15,12 @@
   <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="e95f4ae61fdaf6452d6dfa9cb59dbdf9cdf73c99" upstream="krogoth"/>
   <project name="meta-fsl-arm" remote="yocto" revision="e2254e7b2ded0c2b66b1226f879b3a6d52037b2d" upstream="krogoth"/>
   <project name="boundarydevices/meta-boundary" path="github" remote="github" revision="b526a39452ea69626cddae230718401616c99412" upstream="krogoth" />
-  <project name="01org/meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285" upstream="master"/>
+  <project name="01org/meta-intel-iot-security" path="meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285" upstream="master"/>
   <project name="meta-oic" remote="yocto" revision="0bdd959e0dee4f63098702c302d1d214ac3d808a"/>
   <project name="meta-openembedded" remote="openembedded" revision="55c8a76da5dc099a7bc3838495c672140cedb78e" upstream="krogoth"/>
   <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="4020adfd5198cf581eb20fbfd7d5b4c1a42fcdf4" upstream="morty"/>
   <project name="meta-rust/meta-rust" path="meta-rust" remote="github" revision="d0663639a08ed60bb83fd6eb99e3e2045b21b53c" upstream="krogoth"/>
-  <project name="01org/meta-security-isafw" remote="github" revision="f44f15bb54057dd60399bb5dc7e0ecc7822168a2" upstream="master"/>
+  <project name="01org/meta-security-isafw" path="meta-security-isafw" remote="github" revision="f44f15bb54057dd60399bb5dc7e0ecc7822168a2" upstream="master"/>
   <project name="poky" remote="yocto" revision="ae9b341ecfcc60e970f29cfe04306411ad26c0cf" upstream="krogoth"/>
   <project name="tripzero/meta-amb" path="meta-amb" remote="github" revision="ef3495bb8d6543709f6d1f7b657cb894d32c1757" upstream="master"/>
   
