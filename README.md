@@ -1,1 +1,4 @@
-repo init -b master -m chinook_3.0.1.xml -u https://github.com/validmfg/valid-AGL-repo
+```
+repo init -m default.xml -u http://draco/IVI/valid-AGL-repo.git
+repo sync
+```
