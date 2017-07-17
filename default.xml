@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote fetch="http://draco/" name="valid" pushurl="ssh://draco" review="http://draco/"/>
+  <remote fetch="http://draco/" name="valid" pushurl="git@draco:" review="http://draco/"/>
 
   <remote name="agl"
          fetch="https://gerrit.automotivelinux.org/gerrit/"
