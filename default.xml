@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote fetch="http://draco/" name="valid" pushurl="ssh://draco" review="http://draco/"/>
+  <remote fetch="http://draco/" name="valid" pushurl="git@draco:" review="http://draco/"/>
 
   <remote name="agl"
          fetch="https://gerrit.automotivelinux.org/gerrit/"
@@ -17,34 +17,16 @@
   <!-- meta-rust --> <!-- freescale bsp --> <!-- 01.org -->
   <remote name="github" fetch="https://github.com/" />
 
-  <!-- meta-qt5  -->
-  <remote name="qt.io" fetch="git://code.qt.io/" />
-
-  <!-- fsl/nxp --> <!-- likely broken -->
-  <remote fetch="git://git.freescale.com/imx" name="fsl-release" />
-
   <default revision="master"
            remote="agl"
            sync-j="4" />
 
   <!-- AGL things. -->
   <project name="AGL/meta-agl" path="meta-agl"/>
-  <project name="AGL/meta-agl-extra" path="meta-agl-extra" />
-  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
-  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
-
-  <!-- Updater layers. -->
-  <project name="advancedtelematic/meta-updater" path="meta-updater" remote="github" revision="bae52014b6e3a49e7adf49373238dab9f5f3b4a2"/>
 
   <!-- Yocto/OpenEmbedded things. -->
   <project name="poky" path="poky" remote="yocto" revision="morty" />
   <project name="meta-openembedded" path="meta-openembedded" remote="openembedded" revision="morty" />
-
-  <!-- Qt things --> <!-- meta-qt5 has qt5.7.x in branch morty -->
-  <project name="meta-qt5/meta-qt5" path="meta-qt5" remote="github" revision="morty" />
-  <!-- switch from opensource project meta-qt5 to vendor-maintained repo -->
-  <!-- QT uses vendor branch 5.8 -->
-  <!--<project name="yocto/meta-qt5" path="meta-qt5" remote="qt.io" revision="5.8" />-->
 
   <!-- i.MX6 things -->
   <project name="Freescale/meta-freescale" path="meta-freescale" remote="github" revision="morty"/>  
@@ -53,23 +35,6 @@
 
   <!-- Boundary devices bsp layer -->
   <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="morty" />
-
-  <!-- iotivity -->
-  <project name="meta-oic" path="meta-oic" remote="yocto" revision="0bdd959e0dee4f63098702c302d1d214ac3d808a" />
-
-  <!-- meta-amb -->
-  <project name="tripzero/meta-amb" path="meta-amb" remote="github" revision="master" />
-
-  <!-- meta-rust -->
-  <project name="meta-rust/meta-rust" path="meta-rust" remote="github" revision="a506df4ba4b186e311117d5bdc6a54844583a4fd" />
-
-  <!-- Image Security Analysis FrameWork (isafw) -->
-  <!-- use morty branch for CC and DD - conflicting changes in master-->
-  <project name="01org/meta-security-isafw" path="meta-security-isafw" remote="github" revision="morty" />
-
-  <!-- IoT Security layer -->
-  <!-- fixed version since 3936bc3 removed cynara -->
-  <project name="01org/meta-intel-iot-security" path="meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285" />
 
   <!-- validmfg layer -->
   <project name="IVI/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master"/>
