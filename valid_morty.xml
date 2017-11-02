@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote fetch="http://draco/" name="valid" pushurl="git@draco:" review="http://draco/"/>
   <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl" pushurl="ssh://gerrit.automotivelinux.org:29418" review="https://gerrit.automotivelinux.org/gerrit/"/>
   <remote fetch="https://github.com/" name="github"/>
   <remote fetch="git://git.openembedded.org/" name="openembedded"/>
@@ -23,5 +24,5 @@
   <project name="01org/meta-security-isafw" path="meta-security-isafw" remote="github" revision="morty"/>
   <project name="poky" remote="yocto" revision="morty"/>
   <project name="tripzero/meta-amb" path="meta-amb" remote="github" revision="master"/>
-  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="master" />
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
 </manifest>

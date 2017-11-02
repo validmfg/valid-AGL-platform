@@ -18,5 +18,5 @@
   <project name="poky" remote="yocto" revision="b1f14ecddf5960a8ffa133d760a598bd948d21dc" upstream="pyro"/>
   
   <!-- Valid Manufacturing Layer -->
-  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="master" />
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
 </manifest>

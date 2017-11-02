@@ -15,5 +15,5 @@
   <project name="meta-openembedded" remote="openembedded" revision="fe5c83312de11e80b85680ef237f8acb04b4b26e" upstream="morty"/>
   <project name="poky" remote="yocto" revision="78890ea22750804e3e9113e76f7ca3d7234c8342" upstream="morty"/>
   
-  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="master" />
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
 </manifest>
