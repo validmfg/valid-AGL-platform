@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="http://draco/" name="valid" pushurl="git@draco:" review="http://draco/"/>
+
+  <remote name="agl"
+         fetch="https://gerrit.automotivelinux.org/gerrit/"
+         review="https://gerrit.automotivelinux.org/gerrit/"
+         pushurl="ssh://gerrit.automotivelinux.org:29418"
+  />
+
+  <remote name="yocto"
+          fetch="git://git.yoctoproject.org/" />
+  <remote name="openembedded"
+          fetch="git://git.openembedded.org/" />
+
+  <default revision="refs/tags/dab/4.0.2"
+           remote="agl"
+           sync-j="4" />
+
+  <!-- AGL things. -->
+  <project name="AGL/meta-agl" path="meta-agl" />
+
+  <!-- Yocto/OpenEmbedded things. -->
+  <project name="poky" remote="yocto" revision="60402978fe3648bf560b3386c6e9dd661cdf2083" upstream="morty"/>
+  <project name="meta-openembedded" remote="openembedded" revision="fe5c83312de11e80b85680ef237f8acb04b4b26e" upstream="morty"/>
+
+  <!-- i.MX6 / e.g. wandboard specific things -->
+  <project name="Freescale/meta-freescale" path="meta-freescale" remote="github" revision="fa774ad7fb797957601a8c9fee45af453fea34b7" upstream="morty"/>
+  <project name="Freescale/meta-freescale-3rdparty" path="meta-freescale-3rdparty" remote="github" revision="1879485e63ce369292c89b5902ff6df13509090b" upstream="morty"/>
+  <project name="Freescale/meta-freescale-distro" path="meta-freescale-distro" remote="github" revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="morty"/>
+
+  <!-- Boundary devices bsp layer -->
+  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="82ea76062a501c5de80ca9d58680ef434f92a611" upstream="morty"/>
+  
+  <!-- Valid Manufacturing Layer -->
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="master" />
+
+</manifest>
+

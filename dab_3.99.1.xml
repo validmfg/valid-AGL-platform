@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="http://draco/" name="valid" pushurl="git@draco:" review="http://draco/"/>
+  <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl" pushurl="ssh://gerrit.automotivelinux.org:29418" review="https://gerrit.automotivelinux.org/gerrit/"/>
+  <remote fetch="https://github.com/" name="github"/>
+  <remote fetch="git://git.openembedded.org/" name="openembedded"/>
+  <remote fetch="git://git.yoctoproject.org/" name="yocto"/>
+  
+  <default remote="agl" revision="refs/tags/dab/3.99.1" sync-j="4"/>
+  
+  <project name="AGL/meta-agl" path="meta-agl" revision="79fe06d7b112890cd6adaeac312556369135e5ae" upstream="refs/tags/dab/3.99.1"/>
+  <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="1879485e63ce369292c89b5902ff6df13509090b" upstream="morty"/>
+  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="2d863b7a39e91e5988fc704fef56fbc3e3202ae5" upstream="morty"/>
+  <project name="meta-fsl-arm" remote="yocto" revision="e2254e7b2ded0c2b66b1226f879b3a6d52037b2d" upstream="krogoth"/>
+  <project name="meta-openembedded" remote="openembedded" revision="fe5c83312de11e80b85680ef237f8acb04b4b26e" upstream="morty"/>
+  <project name="poky" remote="yocto" revision="78890ea22750804e3e9113e76f7ca3d7234c8342" upstream="morty"/>
+  
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="master" />
+</manifest>

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote fetch="http://draco/" name="valid" pushurl="git@draco:" review="http://draco/"/>
+  <remote fetch="https://github.com/01org/" name="01org"/>
   <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl" pushurl="ssh://gerrit.automotivelinux.org:29418" review="https://gerrit.automotivelinux.org/gerrit/"/>
   <remote fetch="git://git.freescale.com/imx" name="fsl-release"/>
   <remote fetch="https://github.com/" name="github"/>
   <remote fetch="git://git.openembedded.org/" name="openembedded"/>
   <remote fetch="git://git.yoctoproject.org/" name="yocto"/>
-  
-  <default remote="agl" revision="refs/tags/3.0.3" sync-j="4"/>
-  
-  <project name="AGL/meta-agl" path="meta-agl" revision="900c064d040ef371c88215ee92b8c5d743447f76" upstream="refs/tags/3.0.3"/>
+  <default remote="agl" revision="refs/tags/3.0.4" sync-j="4"/>
+  <project name="AGL/meta-agl" path="meta-agl" revision="29c296c3e109653a3a341a99cbac611cd6323029" upstream="refs/tags/3.0.4"/>
   <project name="Freescale/meta-fsl-arm-extra" path="meta-fsl-arm-extra" remote="github" revision="2c28e636ec15c2cfd49bc9cebe0bbbcfde95bc7b" upstream="krogoth"/>
   <project name="meta-fsl-arm" remote="yocto" revision="e2254e7b2ded0c2b66b1226f879b3a6d52037b2d" upstream="krogoth"/>
-  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="krogoth" />
   <project name="meta-openembedded" remote="openembedded" revision="55c8a76da5dc099a7bc3838495c672140cedb78e" upstream="krogoth"/>
-  <project name="poky" remote="yocto" revision="e59717e80f6288410fa057e34233382bd327697a" upstream="krogoth"/>
+  <project name="poky" remote="yocto" revision="50fdd784231299bedb008f20adeaeeca3eb1452d" upstream="krogoth"/>
+  
+  <!-- Valid Manufacturing Layer -->
   <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="master" />
 </manifest>

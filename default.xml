@@ -25,18 +25,20 @@
   <project name="AGL/meta-agl" path="meta-agl"/>
 
   <!-- Yocto/OpenEmbedded things. -->
-  <project name="poky" path="poky" remote="yocto" revision="morty" />
-  <project name="meta-openembedded" path="meta-openembedded" remote="openembedded" revision="morty" />
+  <project name="poky" path="poky" remote="yocto" revision="pyro" />
+  <project name="meta-openembedded" path="meta-openembedded" remote="openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro" />
 
   <!-- i.MX6 things -->
-  <project name="Freescale/meta-freescale" path="meta-freescale" remote="github" revision="morty"/>  
-  <project name="Freescale/meta-freescale-3rdparty" path="meta-freescale-3rdparty" remote="github" revision="morty"/>
-  <project name="Freescale/meta-freescale-distro" path="meta-freescale-distro" remote="github" revision="morty"/>  
+  <project name="Freescale/meta-freescale" path="meta-freescale" remote="github" revision="pyro" />
+  <project name="Freescale/meta-freescale-3rdparty" path="meta-freescale-3rdparty" remote="github" revision="pyro" />
+  <project name="Freescale/meta-freescale-distro" path="meta-freescale-distro" remote="github" revision="pyro" />
 
   <!-- Boundary devices bsp layer -->
-  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="morty" />
+  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="pyro" />
 
-  <!-- validmfg layer -->
-  <project name="IVI/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master"/>
-
+  <!-- SmartDeviceLink layer -->
+  <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27" />
+  
+  <!-- Valid Manufacturing Layer -->
+  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="github" revision="master" />
 </manifest>
