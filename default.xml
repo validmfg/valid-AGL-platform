@@ -40,5 +40,5 @@
   <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27" />
   
   <!-- Valid Manufacturing Layer -->
-  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
+  <project name="IVI/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
 </manifest>

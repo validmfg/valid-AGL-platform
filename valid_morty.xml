@@ -24,5 +24,5 @@
   <project name="01org/meta-security-isafw" path="meta-security-isafw" remote="github" revision="morty"/>
   <project name="poky" remote="yocto" revision="morty"/>
   <project name="tripzero/meta-amb" path="meta-amb" remote="github" revision="master"/>
-  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
+  <project name="IVI/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
 </manifest>

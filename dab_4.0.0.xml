@@ -17,5 +17,5 @@
   <project name="poky" remote="yocto" revision="fd7f2d644a94bbb951c0bed11af7deb35f1cfb22" upstream="morty"/>
   
   <!-- Valid Manufacturing Layer -->
-  <project name="validmfg/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
+  <project name="IVI/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
 </manifest>
