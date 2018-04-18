@@ -6,13 +6,13 @@
   <remote fetch="git://git.openembedded.org/" name="openembedded"/>
   <remote fetch="git://git.yoctoproject.org/" name="yocto"/>
   
-  <default remote="agl" revision="refs/tags/eel/5.0.2" sync-j="4"/>
+  <default  sync-j="4"/>
   
-  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="AGL/meta-agl" path="meta-agl" remote="agl" revision="refs/tags/eel/5.0.2" />
   <project name="Freescale/meta-freescale" path="meta-freescale" remote="github" revision="06178400afbd641a6709473fd21d893dcd3cfbfa" upstream="pyro"/>
   <project name="Freescale/meta-freescale-3rdparty" path="meta-freescale-3rdparty" remote="github" revision="35badbde05d4f10d4faeefc30bc126b5bd228e2e" upstream="pyro"/>
   <project name="Freescale/meta-freescale-distro" path="meta-freescale-distro" remote="github" revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="pyro"/>
-  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="fb9bd92e4173ded438cd05f4c5c7f7d028d29cc7" upstream="pyro"/>
+  <project name="boundarydevices/meta-boundary" path="meta-boundary" remote="github" revision="b5c05b7174e0823258f303e6a5aed8bcbf10440d" upstream="pyro"/>
   <project name="meta-openembedded" remote="openembedded" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9" upstream="pyro"/>
   <project name="phongt/meta-sdl" path="meta-sdl" remote="github" revision="d9451f4d2dd1a3927b0ce5e55a4f0dc9a3daee27"/>
   <project name="poky" remote="yocto" revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
