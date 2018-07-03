@@ -8,7 +8,8 @@
   
   <default sync-j="4"/>
   
-  <project name="AGL/meta-agl" path="meta-agl" remote="agl" revision="14579523b82ed183322252d6922c7558b0d263aa" upstream="refs/tags/eel/5.0.2"/>
+  <project name="01org/meta-intel-iot-security" path="meta-intel-iot-security" remote="github" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285"/>
+  <project name="AGL/meta-agl" path="meta-agl" remote="agl" revision="e1b558e1f0f1dbd585fd5f4e006550ad9fa1ea13" upstream="refs/tags/eel/5.0.3"/>
   <project name="Freescale/meta-freescale" path="meta-freescale" remote="github" revision="06178400afbd641a6709473fd21d893dcd3cfbfa" upstream="pyro"/>
   <project name="Freescale/meta-freescale-3rdparty" path="meta-freescale-3rdparty" remote="github" revision="35badbde05d4f10d4faeefc30bc126b5bd228e2e" upstream="pyro"/>
   <project name="Freescale/meta-freescale-distro" path="meta-freescale-distro" remote="github" revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" upstream="pyro"/>
