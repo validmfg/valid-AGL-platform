@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://src.timesys.com/services/valid-manufacturing/bluetooth-handsfree-calling/" name="valid" pushurl="git@src.timesys.com:" review="https://src.timesys.com/services/valid-manufacturing/bluetooth-handsfree-calling/"/>
+  <remote fetch="ssh://git@src.timesys.com/services/valid-manufacturing/" name="valid"/>
   <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl" pushurl="ssh://gerrit.automotivelinux.org:29418" review="https://gerrit.automotivelinux.org/gerrit/"/>
   <remote fetch="https://github.com/" name="github"/>
   <remote fetch="git://git.openembedded.org/" name="openembedded"/>
@@ -19,5 +19,5 @@
   <project name="poky" remote="yocto" revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
   
   <!-- Valid Manufacturing Layer -->
-  <project name="IVI/meta-valid-ivi" path="meta-valid-ivi" remote="valid" revision="master" />
+  <project name="bluetooth-handsfree-calling/meta-valid-ivi.git" path="meta-valid-ivi" remote="valid" revision="dev" />
 </manifest>
