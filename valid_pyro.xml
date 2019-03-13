@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="http://draco/" name="valid" pushurl="git@draco:" review="http://draco/"/>
+  <remote fetch="https://src.timesys.com/services/valid-manufacturing/bluetooth-handsfree-calling/" name="valid" pushurl="git@src.timesys.com:" review="https://src.timesys.com/services/valid-manufacturing/bluetooth-handsfree-calling/"/>
   <remote fetch="https://gerrit.automotivelinux.org/gerrit/" name="agl" pushurl="ssh://gerrit.automotivelinux.org:29418" review="https://gerrit.automotivelinux.org/gerrit/"/>
   <remote fetch="https://github.com/" name="github"/>
   <remote fetch="git://git.openembedded.org/" name="openembedded"/>
